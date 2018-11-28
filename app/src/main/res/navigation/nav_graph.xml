@@ -10,7 +10,12 @@
         android:id="@+id/topFragment"
         android:name="com.wantedly.design.android.atom.sandbox20181127.TopFragment"
         android:label="TopFragment"
-        />
+        >
+        <action
+            android:id="@+id/action_topFragment_to_feature1_nav_graph2"
+            app:destination="@id/feature1_nav_graph"
+            />
+    </fragment>
     <fragment
         android:id="@+id/feature1Fragment"
         android:name="com.wantedly.design.android.atom.feature1.Feature1Fragment"
@@ -35,4 +40,5 @@
         android:id="@+id/action_feature2Fragment"
         app:destination="@id/feature2Fragment"
         />
+    <include app:graph="@navigation/feature1_nav_graph" />
 </navigation>
