@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/topFragment"
+    >
+
+    <fragment
+        android:id="@+id/topFragment"
+        android:name="com.wantedly.design.android.atom.sandbox20181127.TopFragment"
+        android:label="TopFragment"
+        />
+    <fragment
+        android:id="@+id/feature1Fragment"
+        android:name="com.wantedly.design.android.atom.feature1.Feature1Fragment"
+        android:label="Feature1Fragment"
+        >
+        <argument
+            android:name="arg1"
+            app:argType="integer"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/feature2Fragment"
+        android:name="com.wantedly.design.android.atom.feature2.Feature2Fragment"
+        android:label="Feature2Fragment"
+        />
+
+    <action
+        android:id="@+id/action_feature1Fragment"
+        app:destination="@id/feature1Fragment"
+        />
+    <action
+        android:id="@+id/action_feature2Fragment"
+        app:destination="@id/feature2Fragment"
+        />
+</navigation>
